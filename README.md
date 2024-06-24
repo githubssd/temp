@@ -1,31 +1,6 @@
-
-Certainly! Let's delve into each of these questions in detail:
-
 ### Q: What approach would you take to preprocess data for a sentiment analysis task?
-
-**A: Preprocessing data for sentiment analysis involves several key steps:**
-
-1. **Data Cleaning:**
-   - **Removing noise:** Eliminate irrelevant information such as HTML tags, special characters, and numbers.
-   - **Lowercasing:** Convert all text to lowercase to ensure uniformity (e.g., "Happy" and "happy" are treated the same).
-   - **Removing stopwords:** Eliminate common words that don't contribute much to the sentiment (e.g., "the", "is", "in").
-   - **Lemmatization/Stemming:** Reduce words to their base or root form (e.g., "running" becomes "run").
-
-2. **Tokenization:**
-   - Split the text into individual words or tokens. This can be done using libraries like NLTK, SpaCy, or the tokenization functions in TensorFlow/Keras.
-
-3. **Handling Special Text Constructs:**
-   - **Emoticons and Emojis:** Convert them into meaningful words or remove them based on their relevance.
-   - **Slang and Abbreviations:** Expand common slang and abbreviations to their full form.
-
-4. **Feature Extraction:**
-   - **Bag-of-Words (BoW):** Convert text into a matrix of token counts.
-   - **TF-IDF (Term Frequency-Inverse Document Frequency):** Weigh the importance of words in the text relative to the corpus.
-   - **Word Embeddings:** Use pre-trained embeddings like Word2Vec, GloVe, or BERT to capture semantic meanings of words.
-
-5. **Handling Imbalanced Data:**
-   - **Resampling:** Use techniques like oversampling the minority class or undersampling the majority class.
-   - **Synthetic Data Generation:** Use techniques like SMOTE (Synthetic Minority Over-sampling Technique).
+I'll start with Data Cleaning by Removing noise, stopwords, and doing Stemming and Lemmatization, Expand common slang and abbreviations, handle emoji and convert them into words. And after Tokenization we can use somthing like TF-IDF, or word2vec or bert to get the embeddings and capture the semantic meanings of words.
+And after that we look for data imbanlance and use Resampling, or Synthetic Data Generation techinques like SMOTE to handle imbalance in data or we can use weighted loss function while traning the model, but that would not be the process of data preprocessing pipeline.
 
 ### Q: How would you deploy a ML model with CI/CD practices?
 
