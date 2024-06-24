@@ -4,32 +4,14 @@ And after that we look for data imbanlance and use Resampling, or Synthetic Data
 
 ### Q: How would you deploy a ML model with CI/CD practices?
 
-**A: Deploying a machine learning model with CI/CD practices involves the following steps:**
-
-1. **Version Control:**
-   - Use Git or another version control system to track changes in code, data, and model versions.
-
-2. **Automated Testing:**
-   - Create unit tests for individual components of the ML pipeline.
-   - Implement integration tests to ensure the end-to-end pipeline works correctly.
-   - Validate model performance with test datasets.
-
-3. **Continuous Integration (CI):**
-   - Set up CI pipelines using tools like Jenkins, Travis CI, or GitHub Actions to automate the building and testing process.
-   - Ensure that every code commit triggers the CI pipeline.
-
-4. **Model Training and Evaluation:**
-   - Automate model training using workflow orchestration tools like Apache Airflow, Kubeflow, or MLflow.
-   - Evaluate model performance using validation metrics and ensure it meets predefined thresholds.
-
-5. **Continuous Deployment (CD):**
-   - Use containerization tools like Docker to create consistent environments for model deployment.
-   - Use orchestration tools like Kubernetes to manage the deployment of containerized applications.
-   - Implement blue-green deployment or canary deployment strategies to minimize downtime and risk.
-
-6. **Monitoring and Logging:**
-   - Set up monitoring tools like Prometheus and Grafana to track model performance and system health.
-   - Implement logging to capture detailed information about system operations and model predictions.
+I'll start with a version control system to track changes in code, data, and model versions.
+Implement unit and integration tests for individual components and end-to-end pipeline, and validate model performance with test datasets.
+Then setup CI pipelines using tools like Jenkins or GitHub Actions to automate the building and testing process
+Automate model training using workflow orchestration tools like Apache Airflow, Kubeflow, or MLflow.
+Evaluate model performance using validation metrics and it meets predefined thresholds, save the model for deployment
+Use Docker and Kubernetes to  containerized and manage the deployment, Implement blue-green deployment or canary deployment strategies to minimize downtime and risk.
+Set up monitoring tools like Prometheus and Grafana to track model performance and system health.
+Implement logging to capture detailed information about system operations and model predictions.
 
 ### Q: When would you choose reinforcement learning over supervised learning and why?
 
